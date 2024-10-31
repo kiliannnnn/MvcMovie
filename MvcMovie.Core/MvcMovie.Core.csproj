@@ -7,7 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ViewsModels\**" />
+    <EmbeddedResource Remove="ViewsModels\**" />
+    <None Remove="ViewsModels\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\MvcMovie.Data\MvcMovie.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="EntityHelpers\" />
+    <Folder Include="ServiceHelpers\" />
   </ItemGroup>
 
 </Project>
